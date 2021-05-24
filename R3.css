@@ -1,0 +1,127 @@
+* {
+    transition: .33s ease all;
+    box-sizing: border-box;
+  }
+
+  body {
+   margin: 0;
+   padding: 0;
+  }
+
+  html {
+    font-family: 'Questrial', sans-serif;
+    box-sizing: border-box;
+  }
+
+  div.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  div.container {
+   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border: 1px solid grey;
+  }
+   
+  .image-card {
+    width: 100%;
+    
+    cursor: pointer;
+   
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 15px;
+  }
+  p {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+  }
+
+
+  div.image-card {
+    height: 300px;
+    width: 100%;
+    background: url("tomorrowland-2017.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  div.text-container {
+    margin: 60px 45px 55px;
+  }
+  @media screen and (min-width: 768px) {
+    div.container {
+      flex-direction: row;
+      width: 100%;
+    }
+  div.image-card {
+      height: 420px;
+      min-width: 360px;
+    }
+   div.text-container {
+      margin: 0 60px;
+      max-width: 660px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    div.container {
+      max-width: 1200px;
+    }
+  }
+
+  /* Sección modal */
+ .modal-container{
+     background-color: rgba(0, 0, 0, 0.4);
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     pointer-events: none;
+ }
+
+ .modal-container.show{
+    pointer-events: auto;
+     opacity: 1;
+    
+ }
+
+ .modal{
+     background-color: #fff;
+     width: 1000px;
+     max-width: 100%;
+     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2 ); 
+    padding: 30px 50px;
+    text-align: center;
+    
+    }
+
+    .modal .close {
+        cursor: pointer;
+        border: none;
+        float: right !important;
+        margin-right: -65px !important;
+        margin-top: -45px !important;
+        background-color: rgb(190, 190, 190) !important;
+        border-radius: 15px !important;
+        width: 30px !important;
+        height: 30px !important;
+        opacity: 1 !important;
+        font-size: 1rem;
+      }
