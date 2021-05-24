@@ -11,7 +11,7 @@ th, td {
   padding: 8px;
 }
 
-
+/* Cambia el formato al achicar la pantalla */
 @media
 	  only screen 
     and (max-width: 760px), (min-device-width: 768px) 
@@ -34,12 +34,12 @@ th, td {
     }
       
     tr:nth-child(odd) {
-      background: rgb(124, 124, 124);
+		background: rgb(171, 189, 207);
     }
     
 		td {
 			border: none;
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid rgb(54, 54, 54);
 			position: relative;
 			padding-left: 50%;
 		}
