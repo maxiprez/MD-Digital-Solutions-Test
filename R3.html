@@ -11,22 +11,29 @@
 <body>
 
     <!-- Card -->
-    <div class="main">
+  <div class="main">
         <div class="container">
-         <div class="image-card" id="open"></div>
-           <div class="text-container">
+        <div class="container-img" id="open">
+            <div class="image-card" ></div>
+             <div class="overlay">
+                <a href="#" class="icon">
+                    <i class="far fa-play-circle"></i>
+                </a>
+            </div>
+        </div>
+        <div class="text-container">
               <h1>Give the world the answer they need, become a Supernatural Partner today.</h1>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolore natus necessitatibus quasi eum, explicabo placeat quam debitis consectetur corporis illum aperiam non repellendus temporibus quis voluptatibus sunt magnam atque.</p>
-           </div>
         </div>
-     </div>
+    </div>
+  </div>
 
 <!-- Acá empieza en modal -->
      <div class="modal-container" id="modal_container">
          <div class="modal">
             <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="embed-container">
-                <video src="tomorrowland-trailer-2017.mp4" muted autoplay controls allowfullscreen></video>
+                <video src="tomorrowland-trailer-2017.mp4" muted autoplay controls allowfullscreen class="video"></video>
             </div>
          </div>
      </div>
