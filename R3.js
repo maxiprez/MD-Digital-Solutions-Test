@@ -11,11 +11,13 @@ open.addEventListener('click', () => {
 //Evento para cerrar el modal
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
+    document.getElementById('video').pause();
 })
 
 //Evento que cierra el modal cuando se hace click afuera
 window.onclick = function(event) {
     if (event.target == modal_container) {
         modal_container.classList.remove('show');
+        document.getElementById('video').pause();
     }
   }
